@@ -24,33 +24,43 @@ const zucchina = [
         lunghezza: 11
     },
     {
-        varietà: "nera",
+        varietà: "bianca",
         peso: 210,
         lunghezza: 16
     },
     {
-        varietà: "nera",
-        peso: 20,
+        varietà: "napoletana",
+        peso: 330,
+        lunghezza: 18
+    },
+    {
+        varietà: "francese",
+        peso: 67,
+        lunghezza: 12
+    },
+    {
+        varietà: "romana",
+        peso: 40,
         lunghezza: 14
     },
     {
-        varietà: "nera",
-        peso: 20,
-        lunghezza: 14
+        varietà: "milanese",
+        peso: 43,
+        lunghezza: 13
     },
     {
-        varietà: "nera",
+        varietà: "toscana",
         peso: 20,
-        lunghezza: 14
-    },
-    {
-        varietà: "nera",
-        peso: 20,
-        lunghezza: 14
-    },
-    {
-        varietà: "nera",
-        peso: 20,
-        lunghezza: 14
+        lunghezza: 19
     },
 ]
+
+//Creo una costante che mi indica il peso totale
+const pesoTotale = 0
+
+//Creo un ciclo che mi calcola il peso di ogni zucchina
+for(let i=0; i < zucchina.length; i++){
+    pesoTotale+= zucchina[i].peso;
+}
+
+console.log(`Tutte le zucchine pesano ${pesoTotale} grammi`)
