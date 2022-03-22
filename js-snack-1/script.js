@@ -56,11 +56,12 @@ const zucchina = [
 ]
 
 //Creo una costante che mi indica il peso totale
-const pesoTotale = 0
+let pesoTotale = 0
 
 //Creo un ciclo che mi calcola il peso di ogni zucchina
 for(let i=0; i < zucchina.length; i++){
     pesoTotale+= zucchina[i].peso;
 }
 
-console.log(`Tutte le zucchine pesano ${pesoTotale} grammi`)
+console.log(`Le zucchine pesano ${pesoTotale} grammi`)
+console.log(`Le le zucchine pesano ${pesoTotale/1000}kg`)
