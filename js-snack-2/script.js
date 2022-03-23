@@ -3,7 +3,7 @@ le zucchine che misurano meno o più di 15cm.
 Infine stampa separatamente quanto pesano i due gruppi di zucchine.*/
 
 //Creo una funzione con all'interno un ciclo che mi somma il peso delle zucchine
-function sommaZucchine(array) {
+function sommaPeso(array) {
     let somma = 0;
     for (let i = 0; i < array.length; i++) {
         somma += array[i].peso;
@@ -86,8 +86,8 @@ console.log(zucchineSmall);
 
 /*Creo delle variabili che, agganciate alla funzione creata sopra, calcolano la somma
 del peso delle zucchine di ciascun array.*/
-const sommaCorte = sommaZucchine(zucchineSmall);
-const sommaLunghe = sommaZucchine(zucchineBig);
+const sommaCorte = sommaPeso(zucchineSmall);
+const sommaLunghe = sommaPeso(zucchineBig);
 
 console.log(`Le zucchine corte pesano in tutto ${sommaCorte} grammi`);
 console.log(`Le zucchine lunghe pesano in tutto ${sommaLunghe} grammi`);
